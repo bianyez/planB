@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"planB/models"
 	"planB/util"
 	"strings"
@@ -25,6 +26,9 @@ func (c *AdminController) Login() {
 		}
 
 		if util.Md5(password) != strings.Trim(user.Password, "") {
+			fmt.Println("输入的密码： ", password)
+			fmt.Println("编码后的密码： ", util.Md5(password))
+			fmt.Println("Trim后的db密码： ", strings.Trim(user.Password, ""))
 			c.History("密码错误", "")
 		}
 
