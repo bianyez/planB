@@ -18,7 +18,7 @@
     <div class="layui-header">
         <div class="layui-main">
             <!-- logo -->
-            <a href="/" style="color: #c2c2c2; font-size: 18px; line-height: 60px;">后台管理系统</a>
+            <a href="/" style="color: #c2c2c2; font-size: 18px; line-height: 60px;">planB项目</a>
             <!-- 水平导航 -->
             <ul class="layui-nav" style="position: absolute; top: 0; right: 0; background: none;">
                 <li class="layui-nav-item">
@@ -91,7 +91,7 @@
             { id: 2, pid: 0, node: '<span style=" font-size: 16px"><i class="layui-icon">&#xe63c;</i> BI数据分析</span>', url: '#' },
             { id: 3, pid: 2, node: '&nbsp;&nbsp;&nbsp;分类管理', url: '/admin/category.html' },
             { id: 5, pid: 2, node: '&nbsp;&nbsp;&nbsp;股票列表', url: '/admin/index.html' },
-            { id: 6, pid: 2, node: '&nbsp;&nbsp;&nbsp;博文添加', url: '/admin/article.html' },
+            { id: 6, pid: 2, node: '&nbsp;&nbsp;&nbsp;研报添加', url: '/admin/article.html' },
         ], 0, 'id', 'pid', 'node', 'url');
         cms.bind(60 + 41 + 20 + 44); //头部高度 + 顶部切换卡标题高度 + 顶部切换卡内容padding + 底部高度
         cms.clickLI(1);
