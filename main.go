@@ -1,11 +1,12 @@
 package main
 
 import (
-	_ "planB/routers"
 	"github.com/astaxie/beego"
+	_ "planB/routers"
 )
 
 func main() {
+	beego.BConfig.WebConfig.Session.SessionOn = true
 	beego.Run()
 }
 

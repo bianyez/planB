@@ -46,6 +46,13 @@ func (c *AdminController) Login() {
 }
 
 
+// 登出接口
+func (c *AdminController) Logout() {
+	c.DestroySession()
+	c.History("退出登录", "/admin/login.html")
+}
+
+
 // 主页
 func (c *AdminController) Main() {
 	// c.TplName相当于http.Handle(http.FIleServer())，是用来寻找html的
